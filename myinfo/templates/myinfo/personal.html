@@ -1,0 +1,10 @@
+{% extends "myinfo/base.html" %}
+
+{% load static %}
+
+{% block script %}
+<script>
+	window.initialData = {{ personal_info|safe }};
+</script>
+<script src="{% static "js/personal-info.js" %}" ></script>
+{% endblock script %}

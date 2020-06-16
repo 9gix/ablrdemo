@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  {% block body %}
+  {% block heading %}
+  <div class='heading' id='heading'>
+    <h1>My Info</h1>
+  </div>
+  {% endblock heading %}
+  {% block menu %}
+  <div class='menu' id='menu'>
+    <a href="{% url "myinfo:contact" %}">Contact Info</a>
+    <a href="{% url "myinfo:personal" %}">Personal Info</a>
+    <a href="{% url "myinfo:income" %}">Income Info</a>
+    <a href="{% url "myinfo:other" %}">Other Info</a>
+  </div>
+  {% endblock menu %}
+  {% block content %}
+  <div id='main'></div>
+  {% endblock content %}
+  {% endblock body %}
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  {% block script %}{% endblock script %}
+</body>
+</html>
