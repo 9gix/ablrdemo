@@ -10,8 +10,6 @@ from django.contrib.auth.decorators import login_required
 
 def login_view(request):
     url = MyInfoClient.get_authorise_url(state="blahblah", callback_url=request.build_absolute_uri(reverse('auth-callback')))
-    print(url)
-    print(request.build_absolute_uri(reverse('auth-callback')))
     return redirect(url)
 
 def auth_callback(request):
