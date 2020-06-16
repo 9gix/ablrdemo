@@ -16,8 +16,8 @@ python manage.py runserver 0.0.0.0:3001
 
 * Contact Info
 
-![Contact Info](./sample/contact_info.png)
+![Contact Info](./sample/contact_info_eugene.png)
 
 * Personal Info
 
-![Personal Info](./sample/personal_info.png)
+![Personal Info](./sample/personal_info_eugene.png)
