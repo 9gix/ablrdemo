@@ -1,5 +1,5 @@
 # Django
-django==2.2.13
+django==2.2.20
 
 # Network & Utils
 requests==2.23.0
